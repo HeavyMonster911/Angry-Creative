@@ -7,3 +7,4 @@ function letsStart() {
     alert("Access denied")
 }
 
+letsStart()
