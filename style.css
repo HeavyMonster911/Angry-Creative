@@ -5,13 +5,14 @@
     src: local('SF Compact Display Medium'), url('assets/fonts/sf-compact-display-medium-58646eb43a785.woff') format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
 
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF Compact Display Thin", sans-serif;
     outline: none;
 }
 
@@ -22,6 +23,7 @@ body {
     min-height: 100vh;
     background-color: #111;
     width: 100%;
+    font-family: "SF Compact Display Thin", sans-serif;
 }
 
 .header {
@@ -59,7 +61,7 @@ body {
 .header__top svg {
     text-decoration: none;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
     transition: 1s;
 }
 
@@ -243,5 +245,6 @@ main {
     font-size: 10px;
     letter-spacing: -1px;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: normal;
+    font-family: 'Inconsolata', monospace;
 }
