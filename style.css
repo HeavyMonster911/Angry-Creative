@@ -1,0 +1,234 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #111;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    box-shadow: 0 5px 10px rgba(161, 161, 161, 0.1);
+    height: 100%;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__top svg {
+    width: 100px;
+}
+
+.header__top svg:hover {
+    cursor: pointer;
+    color: #4dff03;
+}
+
+.header__top .top__left {
+    display: flex;
+    height: 100%;
+}
+
+.header__top a,
+.header__top svg {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.header__top a:hover {
+    color: rgb(80, 249, 255);
+}
+
+.header a:nth-child(2):hover {
+    color: rgb(255, 231, 95);
+}
+
+.header a:nth-child(3):hover {
+    color: rgb(255, 79, 176);
+}
+
+.header a:nth-child(4):hover {
+    color: rgb(255, 93, 93);
+}
+
+.top__center {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.top__center a {
+    margin: 0 10px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.container .box:hover {
+    transform: translateY(-20px);
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+
+.container .box:nth-child(2)::before,
+.container .box:nth-child(2)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(3)::before,
+.container .box:nth-child(3)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    bottom: 6px;
+    right: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container .box .content {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.container .box .content h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container .box .content p {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container .box .content a {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    color: #111;
+    padding: 5px 10px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.container .box .content a:hover {
+    background: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.1);
+}
+
+.footer__bottom {
+    padding: 20px 20px;
+    display: flex;
+    width: 300px;
+    height: 100%;
+}
+
+.footer__bottom svg {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 5px;
+    transition: 1s;
+}
+
+.footer__bottom svg:hover {
+    color: #fff;
+}
+
+.footer__middle {
+    width: 25%;
+    color: rgba(255, 255, 255, 0.2);
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
